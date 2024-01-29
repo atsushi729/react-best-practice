@@ -8,7 +8,7 @@ interface PostType {
 
 const BlogPost = () => {
   const [post, setPost] = useState<PostType | null>(null);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true); // Add new state.
 
   useEffect(() => {
     fetch("https://dummyjson.com/post/1")
